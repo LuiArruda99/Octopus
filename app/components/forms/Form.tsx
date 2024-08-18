@@ -47,14 +47,14 @@ const Form = ({ name, onSubmit }: FormProps) => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col items-center gap-8 w-full">
-      <div className="flex flex-col bg-white w-full md:w-2/3 lg:w-1/2 xl:w-max py-6 px-8 rounded-lg gap-4">
+      <div className="flex flex-col bg-zinc-800 text-center w-full md:w-2/3 lg:w-1/2 xl:w-max py-6 px-8 rounded-lg gap-4">
         <div className="flex flex-col lg:flex-row gap-8 mb-4 justify-between">
           <div>
-            <label htmlFor="educationLevel" className="block mb-2 font-medium text-gray-900">Educação</label>
+            <label htmlFor="educationLevel" className="block mb-2 font-medium text-neutral-300 font-semibold">Escolaridade</label>
             <select 
               id="educationLevel"
               name="educationLevel" 
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-400 rounded-lg border border-gray-500 focus:ring-blue-500 focus:border-blue-500"
               value={educationLevel}
               onChange={(event) => setEducationLevel(event.target.value)}
             >
@@ -64,11 +64,11 @@ const Form = ({ name, onSubmit }: FormProps) => {
             </select>
           </div>
           <div>
-            <label htmlFor="subject" className="block mb-2 font-medium text-gray-900">Matéria</label>
+            <label htmlFor="subject" className="block mb-2 font-medium text-neutral-300 font-semibold">Matéria</label>
             <input
               id="subject"
               name="subject" 
-              className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border ${
+              className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-400 rounded-lg border ${
                 subjectError ? 'border-red-500' : 'border-gray-300'
               } focus:ring-blue-500 focus:border-blue-500`}
               value={subject}
@@ -82,12 +82,12 @@ const Form = ({ name, onSubmit }: FormProps) => {
           </div>
         </div>
         <div className="w-full">
-          <label htmlFor="content" className="block mb-2 font-medium text-gray-900">Conteúdo</label>
+          <label htmlFor="content" className="block mb-2 font-medium text-neutral-300 font-semibold">Conteúdo</label>
           <textarea 
             id="content"
             name="content"
             rows={3} 
-            className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border ${
+            className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-400 rounded-lg border ${
               contentError ? 'border-red-500' : 'border-gray-300'
             } focus:ring-blue-500 focus:border-blue-500`}
             value={content}
@@ -103,7 +103,7 @@ const Form = ({ name, onSubmit }: FormProps) => {
 
       <button
         type="submit" 
-        className={`${isSubmitting ? "cursor-progress" : "cursor-pointer"} bg-gradient-to-tr from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 px-5 py-3 text-white font-semibold rounded-lg`}
+        className={`${isSubmitting ? "cursor-progress" : "cursor-pointer"} bg-gradient-to-r from-blue-600 to-rose-400 hover:from-blue-800 hover:to-rose-800 px-5 py-3 text-white font-semibold rounded-lg`}
         disabled={isSubmitting}
       >
         {

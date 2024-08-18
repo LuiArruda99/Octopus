@@ -52,7 +52,7 @@ const FlashcardsPage = () => {
 
   const handleFormSubmit = ({ educationLevel, subject, content }: formDataProps) => {
     const prompt = `
-      Crie 12 flashcards numerados para a disciplina de ${subject} para um estudante do ${educationLevel}, abrangendo os seguintes tópicos: 
+      Crie 10 flashcards numerados para a disciplina de ${subject} para um estudante do ${educationLevel}, abrangendo os seguintes tópicos: 
       
       ${content}
 
