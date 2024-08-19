@@ -52,7 +52,7 @@ const FlashcardsPage = () => {
 
   const handleFormSubmit = ({ educationLevel, subject, content }: formDataProps) => {
     const prompt = `
-      Crie 10 flashcards numerados para a disciplina de ${subject} para um estudante do ${educationLevel}, abrangendo os seguintes tópicos: 
+      Crie 12 flashcards numerados para a disciplina de ${subject} para um estudante do ${educationLevel}, abrangendo os seguintes tópicos: 
       
       ${content}
 
@@ -110,7 +110,7 @@ const FlashcardsPage = () => {
 
   return (
     <>
-      <main className="p-8 lg:py-12 lg:px-24">
+      <main className="p-8 lg:py-1 lg:px-24">
         <div className="flex flex-col items-center gap-8">
           <Logo />
           {
@@ -140,8 +140,8 @@ const FlashcardsPage = () => {
       </main>
       
       <div className="flex justify-center text-center text-white py-4">
-        O EstudAI já gerou 
-        <div className="mx-1.5 text-yellow-400 underline">
+        O Octopus já gerou 
+        <div className="mx-1.5 text-blue-600 underline">
           {showCount ? flashcardCount : (
           <Image
             src={"/dot_loading.svg"}

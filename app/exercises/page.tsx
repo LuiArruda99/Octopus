@@ -88,7 +88,7 @@ const ExercisesPage = () => {
           <Logo />
           {
             isGenerated ? (
-              <div className="py-6 px-8 w-auto bg-white rounded-lg border-1 border-gray-200 shadow-lg">
+              <div className="py-6 px-8 w-auto bg-zinc-300 rounded-lg border-1 border-gray-200 shadow-lg">
                 <Markdown className="prose lg:prose-lg" children={exercises} />
                 <div className="mt-2 pt-6 border-t-2 border-gray-300 flex flex-col items-start">
                   <button
@@ -110,8 +110,8 @@ const ExercisesPage = () => {
         </div>
       </main>
       <div className="flex justify-center text-center text-white py-4">
-        O EstudAI já gerou 
-        <div className="mx-1.5 text-yellow-400 underline">
+        O Octopus já gerou 
+        <div className="mx-1.5 text-blue-600 underline">
           {showCount ? exerciseCount : (
             <Image
               src={"/dot_loading.svg"}

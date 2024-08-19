@@ -108,8 +108,8 @@ const SummaryPage = () => {
         </div>
       </main>
       <div className="flex justify-center text-center text-white py-8">
-        O EstudAI já gerou 
-        <div className="mx-1.5 text-yellow-400 underline">
+        O Octopus já gerou 
+        <div className="mx-1.5 text-blue-600 underline">
           {showCount ? summaryCount : (
             <Image
               src={"/dot_loading.svg"}

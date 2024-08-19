@@ -18,7 +18,7 @@ interface FlashcardItemProps {
 const FrontOfCard = ({ question, handleFlip, isFlipped }: FrontOfCardProps) => {
   return (
     <div 
-      className={`px-4 py-8 absolute inset-0 w-full h-full flex justify-center items-center text-center bg-gradient-to-tr from-blue-700 to-blue-500 transition-all duration-100 delay-200 z-20 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}
+      className={`px-4 py-8 absolute inset-0 w-full h-full flex justify-center items-center text-center bg-zinc-800 transition-all duration-100 delay-200 z-20 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}
       onClick={handleFlip}  
     >
       {question}
@@ -28,7 +28,7 @@ const FrontOfCard = ({ question, handleFlip, isFlipped }: FrontOfCardProps) => {
 
 const BackOfCard = ({ answer }: BackOfCardProps) => {
   return (
-    <div className="px-4 py-8 absolute inset-0 w-full h-full flex justify-center items-center text-center bg-gradient-to-tr from-green-600 to-green-400 transition-all z-10 card-back">
+    <div className="px-4 py-8 absolute inset-0 w-full h-full flex justify-center items-center text-center bg-emerald-950 transition-all z-10 card-back">
       {answer}
     </div>
   );
