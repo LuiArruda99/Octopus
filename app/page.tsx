@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <div className="flex flex-wrap justify-center gap-6 lg:gap-16">
         <OptionBox title={"Flashcards"} icon={"flashcard.svg"} link={"/flashcards"}/>
-        <OptionBox title={"Resumo"} icon={"resumo.svg"} link={"/summary"}/>
+        <OptionBox title={"Resumos"} icon={"resumo.svg"} link={"/summary"}/>
         <OptionBox title={"Listas de Exercícios"} icon={"lista.svg"} link={"/exercises"}/>
       </div>
     </main>

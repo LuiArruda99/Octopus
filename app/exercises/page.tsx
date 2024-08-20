@@ -48,13 +48,15 @@ const ExercisesPage = () => {
 
   const handleFormSubmit = async ({ educationLevel, subject, content }: formDataProps) => {
     const prompt = `
-      Crie uma lista de exercícios de ${subject} para um estudante de ${educationLevel}. 
+      Crie uma lista de exercícios de ${subject} para um estudante do ${educationLevel}. 
 
       Os exercícios devem abranger os seguintes tópicos:
 
       ${content}
 
-      Inclua instruções claras para cada exercício e, se aplicável, sugira links de referência para ajudar na resolução.
+      A lista de exercícios deve conter 10 questões de múltipla escolha, com 5 alternativas cada (onde apenas uma alternativa deverá ser a correta). Além disso, a lista deve conter uma questão desafio extra com nível de dificuldade um pouco maior do que as demais.
+
+      Ao final da lista, adicione um gabarito com as respostas corretas e justificativas para cada questão.
 
       O Título deve ser "Lista de exercícios de ${subject} - ${educationLevel}".
 
